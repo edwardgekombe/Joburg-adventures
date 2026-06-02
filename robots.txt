@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /Images/
+
+Sitemap: https://joburgadventures.com/sitemap.xml
