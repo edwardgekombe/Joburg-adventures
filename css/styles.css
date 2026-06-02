@@ -586,6 +586,23 @@ img {
     transition: var(--transition);
 }
 
+/* Mobile Search Button (next to hamburger) */
+.mobile-search-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #eee;
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--primary-black);
+}
+
+.mobile-search-button i { font-size: 16px; }
+
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
     position: fixed;
@@ -698,6 +715,13 @@ img {
 .nav-menu-mobile > li {
     border-bottom: 1px solid #f0f0f0;
 }
+
+/* show search button on mobile */
+@media (max-width: 992px) {
+    .menu-toggle { display: flex; }
+    .mobile-search-button { display: flex; }
+}
+
 
 .nav-menu-mobile > li > a {
     display: flex;

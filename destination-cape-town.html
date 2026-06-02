@@ -120,7 +120,7 @@
                 <div class="nav-icons"><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></div>
                 <a href="guides.html" class="btn btn-primary">Find My Guide</a>
             </div>
-            <div class="menu-toggle"><span></span><span></span><span></span></div>
+            <div class="menu-toggle"><span></span><span></span><span></span></div><button class="mobile-search-button" aria-label="Open search"><i class="fas fa-search"></i></button>
         </div>
     </nav>
 
@@ -612,5 +612,6 @@
             assistantInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); assistantSend.click(); } });
         }
     </script>
+    <script src='js/mobile-nav-actions.js'></script>
 </body>
 </html>
