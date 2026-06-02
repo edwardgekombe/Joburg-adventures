@@ -2808,6 +2808,20 @@ border-color: var(--primary-gold);
         padding: 10px;
         align-items: center;
         justify-content: center;
+        gap: 8px;
+    }
+n    /* hide desktop search toggle on mobile to avoid duplicates */
+    .search-toggle {
+        display: none !important;
+    }
+    /* ensure the mobile search button sits nicely next to the hamburger */
+    .menu-toggle + .mobile-search-button {
+        margin-left: 6px;
+    }
+    .mobile-search-button {
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        border-color: rgba(0,0,0,0.06);
+        background: linear-gradient(180deg,#fff,#fbfbfb);
     }
 
     /* full-screen mobile nav for a cleaner, touch-friendly experience */
