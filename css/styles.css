@@ -513,6 +513,30 @@ img {
     }
 }
 
+/* Hide desktop nav search icon on small screens to prevent duplicate mobile search button */
+@media (max-width: 768px) {
+    .nav-icons {
+        display: none !important;
+    }
+
+    /* Place mobile search button before the menu toggle in DOM order using flexbox ordering */
+    .main-nav .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-search-button {
+        order: 1;
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+    }
+
+    .menu-toggle {
+        order: 2;
+    }
+}
+
 .nav-icons {
     display: flex;
     gap: 15px;
@@ -1309,16 +1333,29 @@ body.menu-open {
     }
 
     .hero-right {
-        order: -1;
+        order: 2;
     }
 
     .hero-copy {
+        order: 1;
         max-width: 100%;
     }
 
     .hero-buttons {
         justify-content: center;
     }
+}
+
+/* Highlight style for hero heading phrase */
+.hero-copy h1 .hero-highlight {
+    color: var(--primary-gold);
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    display: inline-block;
+    background: rgba(212,160,23,0.08);
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(212,160,23,0.08);
 }
 
 @media (max-width: 768px) {
@@ -1504,6 +1541,19 @@ body.menu-open {
 
     font-weight: 400;
     color: var(--dark-gray);
+}
+
+/* Large price tags shown on homepage adventure cards */
+.adventure-price-large {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+}
+
+.adventure-price-large span {
+    font-weight: 900;
+    color: var(--primary-gold);
+    margin-left: 6px;
 }
 
 .adventure-rating {
