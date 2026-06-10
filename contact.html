@@ -122,7 +122,7 @@
                 <li><a href="tel:+254789578168"><i class="fas fa-phone"></i> +254 789 578 168</a></li>
                 <li><a href="mailto:info@joburgadventures.com"><i class="fas fa-envelope"></i> info@joburgadventures.com</a></li>
                 <li><a href="https://www.instagram.com/joburgadventures" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://x.com/JoburgAdventur" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+                <li><a href="https://x.com/JoburgAdventure" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
                 <li><a href="https://ke.linkedin.com/company/joburg-adventures" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="https://www.tiktok.com/@joburg.adventures" target="_blank"><i class="fab fa-tiktok"></i></a></li>
                 <li><a href="https://wa.me/254789578168" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
@@ -447,7 +447,7 @@
                     <span>Follow Us</span>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/joburgadventures" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://x.com/JoburgAdventur" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://x.com/JoburgAdventure" target="_blank"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://ke.linkedin.com/company/joburg-adventures" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.tiktok.com/@joburg.adventures" target="_blank"><i class="fab fa-tiktok"></i></a>
                         <a href="https://wa.me/254789578168" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -460,25 +460,29 @@
                 <h3>Send Us a Message</h3>
                 <p>Fill out the form below and we'll get back to you within 24 hours.</p>
                 
-                <form class="booking-form">
+                <form class="booking-form" action="https://formsubmit.co/momanyimangabo@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - Joburg Adventures">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Optional: set redirect after submission; change to your site URL -->
+                    <input type="hidden" name="_next" value="/thank-you.html">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Your full name" required>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="your@email.com" required>
+                            <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="+254 700 000000">
+                            <input type="tel" id="phone" name="phone" placeholder="+254 700 000000">
                         </div>
                         <div class="form-group">
                             <label for="package">Interested Package</label>
-                            <select id="package">
+                            <select id="package" name="package">
                                 <option value="">Select a package</option>
                                 <option value="safari">Safari Packages</option>
                                 <option value="beach">Beach Holidays</option>
@@ -491,16 +495,16 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="date">Preferred Travel Date</label>
-                            <input type="date" id="date">
+                            <input type="date" id="date" name="travel_date">
                         </div>
                         <div class="form-group">
                             <label for="travelers">Number of Travelers</label>
-                            <input type="number" id="travelers" placeholder="1" min="1">
+                            <input type="number" id="travelers" name="travelers" placeholder="1" min="1">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" placeholder="Tell us about your dream adventure, preferred activities, dietary requirements, or any special requests..."></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us about your dream adventure, preferred activities, dietary requirements, or any special requests..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">
                         <i class="fas fa-paper-plane"></i> Send Message
@@ -585,7 +589,7 @@
                     </div>
                      <div class="footer-social">
                          <a href="https://www.instagram.com/joburgadventures" target="_blank"><i class="fab fa-instagram"></i></a>
-                         <a href="https://x.com/JoburgAdventur" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                         <a href="https://x.com/JoburgAdventure" target="_blank"><i class="fab fa-x-twitter"></i></a>
                          <a href="https://ke.linkedin.com/company/joburg-adventures" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                          <a href="https://www.tiktok.com/@joburg.adventures" target="_blank"><i class="fab fa-tiktok"></i></a>
                          <a href="https://bsky.app/profile/momanyimangabo.bsky.social" target="_blank"><i class="fab fa-bluesky"></i></a>
