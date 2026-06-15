@@ -1,0 +1,223 @@
+/* =============================================
+   Typography Overrides - Poppins & Reduced Sizes
+   ============================================= */
+
+/* Set Poppins as the base font for the entire document */
+html {
+    font-family: var(--font-primary) !important;
+    font-size: 15px; /* Reduced base from 16px */
+}
+body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Ensure Font Awesome icons use the correct font families */
+/* Solid/Regular use the Free font; Brands use the Brands font */
+.fa, .fas, .far, .fa-solid, .fa-regular {
+    font-family: "Font Awesome 6 Free" !important;
+}
+.fab, .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+/* Fix icon font weights - crucial for icons to display */
+.fas, .fa-solid {
+    font-weight: 900 !important;
+}
+
+.far, .fa-regular, .fab, .fa-brands {
+    font-weight: 400 !important;
+}
+
+/* Headings - all bold Gilroy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary) !important;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+/* Heading sizes (reduced) */
+h1 { font-size: 2.5rem !important; }    /* 37.5px */
+h2 { font-size: 2rem !important; }      /* 30px */
+h3 { font-size: 1.5rem !important; }    /* 22.5px */
+h4 { font-size: 1.25rem !important; }   /* 18.75px */
+h5 { font-size: 1.125rem !important; }  /* 16.875px */
+h6 { font-size: 1rem !important; }      /* 15px */
+
+/* Logo text */
+.logo-text .joburg { font-size: 2rem !important; font-weight: 900; }
+.logo-text .adventures { font-size: 0.8667rem !important; font-weight: 500; }
+
+/* Section tagline (uppercase small label) */
+.section-tagline {
+    font-size: 0.8667rem !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Section titles (usually h2) */
+.section-title {
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+/* Section subtitle */
+.section-subtitle {
+    font-size: 1rem !important;
+    color: var(--dark-gray);
+}
+
+/* Top header contact info */
+.contact-info li a {
+    font-size: 0.875rem !important;
+}
+.contact-info li a i {
+    font-size: 0.875rem !important;
+}
+
+/* Navigation */
+.nav-menu a {
+    font-weight: 700 !important; /* Bold */
+    font-size: 1rem !important;
+}
+.nav-menu li.dropdown > a i {
+    font-size: 8px !important;
+}
+.nav-menu .dropdown-menu li a {
+    font-size: 0.8667rem !important;
+}
+.nav-menu .dropdown-menu .sub-menu li a {
+    font-size: 0.8667rem !important;
+}
+
+/* Mobile navigation */
+.nav-menu-mobile > li > a {
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
+/* Buttons */
+.btn {
+    font-size: 1rem !important;
+    font-weight: 600;
+}
+.btn i {
+    font-size: 0.8667rem !important;
+}
+
+/* Adventure cards */
+.adventure-title {
+    font-size: 1.125rem !important;
+    font-weight: 700;
+}
+.adventure-location {
+    font-size: 0.875rem !important;
+    color: var(--dark-gray);
+}
+.adventure-description {
+    font-size: 0.9333rem !important;
+    line-height: 1.5;
+}
+.adventure-meta, .package-meta {
+    font-size: 0.875rem !important;
+}
+.adventure-price, .package-price {
+    font-size: 1.125rem !important;
+    font-weight: 700;
+    color: var(--primary-gold);
+}
+.adventure-rating {
+    font-size: 0.75rem !important;
+    color: var(--primary-gold);
+}
+.adventure-badge, .package-badge {
+    font-size: 0.75rem !important;
+    font-weight: 600;
+}
+
+/* Packages */
+.package-title {
+    font-size: 1.125rem !important;
+    font-weight: 700;
+}
+
+/* Destinations */
+.destination-name {
+    font-size: 1.125rem !important;
+    font-weight: 700;
+}
+.destination-count {
+    font-size: 0.75rem !important;
+}
+
+/* Feature cards */
+.feature-card h3, .why-item h3 {
+    font-size: 1.125rem !important;
+    font-weight: 700;
+}
+.feature-card p, .why-item p {
+    font-size: 0.875rem !important;
+}
+
+/* Footer */
+.footer-title {
+    font-size: 1.125rem !important;
+    font-weight: 700;
+}
+.footer-links a, .footer-contact-info a {
+    font-size: 0.875rem !important;
+}
+.footer-bottom {
+    font-size: 0.75rem !important;
+}
+
+/* Gallery overlay */
+.gallery-overlay i {
+    font-size: 1.5rem !important;
+}
+
+/* Mobile menu logo */
+.mobile-logo {
+    font-size: 1.25rem !important;
+    font-weight: 700;
+}
+
+/* CTA Section */
+.cta-content h2 {
+    font-size: 2.5rem !important;
+}
+.cta-content p {
+    font-size: 1.125rem !important;
+}
+
+/* Page header */
+.page-header h1 {
+    font-size: 2.5rem !important;
+}
+.page-header p {
+    font-size: 1.125rem !important;
+}
+
+/* Info box */
+.info-box-content .section-title {
+    font-size: 2rem !important;
+}
+.check-list li {
+    font-size: 0.875rem !important;
+}
+
+/* Booking modal */
+.booking-modal-title {
+    font-size: 1.5rem !important;
+}
+.booking-option {
+    font-size: 0.875rem !important;
+}
+.quote-contact h4 {
+    font-size: 1rem !important;
+}
+.quote-contact input {
+    font-size: 1rem !important;
+}
